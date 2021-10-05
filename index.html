@@ -5,7 +5,537 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
-  <body></body>
+  <body>
+    <div class="body__container">
+      <!-- HEADER -->
+      <header class="header">
+        <div class="header__container">
+          <nav class="navigation" aria-label="Main navigation">
+            <a href="./index.html" aria-label="Logo AppSon" class="logo"
+              ><h1>AppSon</h1></a
+            >
+            <button
+              type="button"
+              class="button navigation__button"
+              aria-expanded="false"
+              aria-controls="menu-container"
+              data-menu-button
+            >
+              <svg
+                width="40"
+                height="40"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  d="M23.734 10.304 22.23 8.8l-5.963 5.962L10.305 8.8l-1.504 1.504 5.962 5.962-5.962 5.963 1.504 1.504 5.962-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.962z"
+                />
+              </svg>
+              <svg
+                width="40"
+                height="40"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 32 32"
+              >
+                <path
+                  d="M6.4 11.734V9.6h19.2v2.134H6.4zm0 5.332h19.2v-2.133H6.4v2.133zm0 5.334h19.2v-2.134H6.4V22.4z"
+                />
+              </svg>
+            </button>
+            <ul class="navigation__list" id="menu-container" data-menu>
+              <li class="navigation__item"><a href="./index.html">Home</a></li>
+              <li class="navigation__item"><a href="#Features">Features</a></li>
+              <li class="navigation__item"><a href="#Pricing">Pricing</a></li>
+              <li class="navigation__item"><a href="#Pages">Pages</a></li>
+            </ul>
+            <button type="button" class="button">SIGN UP</button>
+          </nav>
+        </div>
+      </header>
+      <!-- /HEADER -->
+      <!-- MAIN -->
+      <main class="main">
+        <!-- Hero -->
+        <section id="Home" class="section hero">
+          <h2 class="section__title">Best Desktop App for You</h2>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+          </p>
+          <button type="button" class="button">Download</button>
+          <button type="button" class="button">Free Trial</button>
+        </section>
+        <!-- /Hero -->
+        <!-- Features -->
+        <section id="Features" class="section features">
+          <h2 class="section__title">Features</h2>
+          <button
+            width="114"
+            height="114"
+            type="button"
+            class="button features__button"
+            aria-expanded="false"
+            aria-controls="features__cards"
+            data-feature-button
+          ></button>
+          <ul class="features__cards" id="features__cards" data-features>
+            <li class="features__item">
+              <p class="card__title">Analysis</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
+              </p>
+            </li>
+            <li class="features__item">
+              <p class="card__title">Clean Design</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
+              </p>
+            </li>
+            <li class="features__item">
+              <p class="card__title">Messaging</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- /Features -->
+        <!-- About -->
+        <section class="section about">
+          <h2 class="section__title">About</h2>
+          <ul class="about__list">
+            <li class="about__item">
+              <h3 class="about__subtitle">Easy Messaging</h3>
+              <p class="about__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a
+                href="#"
+                class="about__link"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                >Read More</a
+              >
+            </li>
+            <li class="about__item">
+              <h3 class="about__subtitle">Keep In Touch</h3>
+              <p class="about__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <a
+                href="#"
+                class="about__link"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                >Read More</a
+              >
+            </li>
+          </ul>
+        </section>
+        <!-- /About -->
+        <!-- How Does It Works? -->
+        <section class="section how-works">
+          <h2 class="section__title">How Does It Works?</h2>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet.
+          </p>
+          <ul class="how-works__cards">
+            <li class="how-works__item">
+              <p class="card__title">Create An Account</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod.
+              </p>
+            </li>
+            <li class="how-works__item">
+              <p class="card__title">Confirm Email</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod.
+              </p>
+            </li>
+            <li class="how-works__item">
+              <p class="card__title">See Results</p>
+              <p class="card__description">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- /How Does It Works? -->
+        <!-- Pricing Plan -->
+        <section id="Pricing" class="section pricing-plan">
+          <h2 class="section__title">Pricing Plan</h2>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet.
+          </p>
+          <fieldset id="plan">
+            <input type="radio" name="plan" id="Monthly" checked /><span
+              >Monthly</span
+            >
+            <input type="radio" name="plan" id="Yearly" /><span>Yearly</span>
+          </fieldset>
+          <ul class="pricing-plan__list">
+            <li class="pricing-plan__item">
+              <div class="card__up"><p class="card__title">Premium</p></div>
+              <div class="card__down">
+                <ul class="pricing-plan__description">
+                  <li class="pricing-plan__text">2gb Hosting</li>
+                  <li class="pricing-plan__text">10 Custom Domain</li>
+                  <li class="pricing-plan__text">SSD Hosting</li>
+                  <li class="pricing-plan__text">50 gb Bandwith</li>
+                  <li class="pricing-plan__text">Free Support</li>
+                </ul>
+                <p class="pricing-plan__price">$49.00</p>
+                <button type="button" class="button">Try Now</button>
+              </div>
+            </li>
+            <li class="pricing-plan__item">
+              <div class="card__up"><p class="card__title">Standart</p></div>
+              <div class="card__down">
+                <ul class="pricing-plan__description">
+                  <li class="pricing-plan__text">2gb Hosting</li>
+                  <li class="pricing-plan__text">10 Custom Domain</li>
+                  <li class="pricing-plan__text">SSD Hosting</li>
+                  <li class="pricing-plan__text">50 gb Bandwith</li>
+                  <li class="pricing-plan__text">Free Support</li>
+                </ul>
+                <p class="pricing-plan__price">$19.00</p>
+                <button type="button" class="button">Try Now</button>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- /Pricing Plan -->
+        <!-- Testimonials -->
+        <section class="section testimonials">
+          <h2 class="section__title">Trusted By More Than 55M Peoples</h2>
+          <ul class="testimonials__cards">
+            <li class="testimonials__item">
+              <p class="testimonials__title">Raisa Moni</p>
+              <p class="testimonials__subtitle">Envato Customer</p>
+              <a
+                class="testimonials__icon"
+                href="http://twitter.com"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+              >
+                <svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+              <p class="testimonials__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore etamet.
+              </p>
+            </li>
+            <li class="testimonials__item">
+              <p class="testimonials__title">Raisa Moni</p>
+              <p class="testimonials__subtitle">Envato Customer</p>
+              <a
+                class="testimonials__icon"
+                href="http://twitter.com"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                ><svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+              <p class="testimonials__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore etamet.
+              </p>
+            </li>
+            <li class="testimonials__item">
+              <p class="testimonials__title">Raisa Moni</p>
+              <p class="testimonials__subtitle">Envato Customer</p>
+              <a
+                class="testimonials__icon"
+                href="http://twitter.com"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                ><svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+              <p class="testimonials__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore etamet.
+              </p>
+            </li>
+            <li class="testimonials__item">
+              <p class="testimonials__title">Raisa Moni</p>
+              <p class="testimonials__subtitle">Envato Customer</p>
+              <a
+                class="testimonials__icon"
+                href="http://twitter.com"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                ><svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+              <p class="testimonials__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incididunt ut labore etamet.
+              </p>
+            </li>
+          </ul>
+        </section>
+        <!-- /Testimonials -->
+        <!-- Latest News -->
+        <section id="Pages" class="section news">
+          <h2 class="section__title">Latest News From Us</h2>
+          <p class="section__text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
+            ipsum dolor sit amet.
+          </p>
+          <ul class="news__cards">
+            <li class="news__item">
+              <div class="card__thunb">
+                <img src="./img/latest/main.webp" alt="main" srcset="" />
+              </div>
+              <div class="news__description">
+                <p class="news__title">
+                  The master bedroom suite is phenomenally spacious
+                </p>
+                <p class="news__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a
+                  href="#"
+                  class="news__link"
+                  target="_blank"
+                  rel="noopener nofollow norefferer"
+                  >Continue Reading</a
+                >
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="card__thunb">
+                <img src="./img/latest/1.webp" alt="1pic" srcset="" />
+              </div>
+              <div class="news__description">
+                <p class="news__title">
+                  The master bedroom suite is phenomenally spacious
+                </p>
+                <p class="news__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod.
+                </p>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="card__thunb">
+                <img src="./img/latest/2.webp" alt="2pic" srcset="" />
+              </div>
+              <div class="news__description">
+                <p class="news__title">
+                  The master bedroom suite is phenomenally spacious
+                </p>
+                <p class="news__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod.
+                </p>
+              </div>
+            </li>
+            <li class="news__item">
+              <div class="card__thunb">
+                <img src="./img/latest/3.webp" alt="3pic" srcset="" />
+              </div>
+              <div class="news__description">
+                <p class="news__title">
+                  The master bedroom suite is phenomenally spacious
+                </p>
+                <p class="news__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </section>
+        <!-- /Latest News -->
+        <!-- Free Trial -->
+        <section class="section">
+          <h2 class="section__title">Try 30 Days Free Trial</h2>
+          <p class="section__text">No credit card reauired</p>
+          <button type="button" class="button">Get Stared</button>
+        </section>
+        <!-- /Free Trial -->
+        <!-- Widget -->
+        <section class="section subscribe">
+          <h2 class="section__title">SUBSCRIBE</h2>
+          <h3 class="section__subtitle">AppSon</h3>
+          <form action="#" class="subscribe__form">
+            <input type="text" placeholder="Enter Your Email" />
+            <button type="submit" class="button">SUBSCRIBE</button>
+          </form>
+        </section>
+        <!-- /Widget -->
+      </main>
+      <!-- /MAIN -->
+      <!-- FOOTER -->
+      <footer class="footer">
+        <div class="footer__container">
+          <p class="footer__copyright">
+            &#169; 2018 Copyright, All Rights Reserved by AppSon
+          </p>
+          <ul class="footer__info">
+            <li class="info__text">
+              <a
+                class="info__link"
+                href="#"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                >Terms &#38; Condition</a
+              >
+            </li>
+            <li class="info__text">
+              <a
+                class="info__link"
+                href="#"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                >Privacy Policy</a
+              >
+            </li>
+            <li class="info__text">
+              <a
+                class="info__link"
+                href="#"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                >Help</a
+              >
+            </li>
+          </ul>
+          <ul class="footer__social-links">
+            <li>
+              <a
+                aria-label="Link on Facebook"
+                class="footer__link"
+                href="http://ru-ru.facebook.com"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                ><svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M11.437 30V15.923H8.226v-5.068h3.211v-4.33C11.437 3.125 13.335 0 17.706 0c1.77 0 3.078.197 3.078.197l-.103 4.733s-1.335-.015-2.791-.015c-1.576 0-1.829.842-1.829 2.239v3.7h4.745l-.206 5.07h-4.539V30h-4.624Z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label="Link on Twitter"
+                class="footer__link"
+                href="http://twitter.com"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                ><svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+            </li>
+            <li>
+              <a
+                aria-label="Link on Youtube"
+                class="footer__link"
+                href="http://www.youtube.com"
+                target="_blank"
+                rel="noopener nofollow norefferer"
+                ><svg
+                  width="30"
+                  height="30"
+                  viewBox="0 0 30 30"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M27.577 8.675a3.29 3.29 0 0 0-2.32-2.323C23.209 5.8 15 5.8 15 5.8s-8.209 0-10.257.548a3.285 3.285 0 0 0-2.32 2.323C1.875 10.722 1.875 15 1.875 15s0 4.277.548 6.325a3.29 3.29 0 0 0 2.32 2.323C6.791 24.2 15 24.2 15 24.2s8.209 0 10.257-.55a3.284 3.284 0 0 0 2.32-2.324c.548-2.048.548-6.325.548-6.325s0-4.277-.548-6.325Zm-15.184 10.25v-7.85l6.796 3.896-6.796 3.955Z"
+                    fill="#fff"
+                  /></svg
+              ></a>
+            </li>
+          </ul>
+          <div class="footer__icon"><a href="#Home">Вверх</a></div>
+        </div>
+      </footer>
+      <!-- /FOOTER -->
+    </div>
+  </body>
 </html>
