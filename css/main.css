@@ -1,4 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  background-color: aqua;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  display: block;
+  height: auto;
+}
+
+.card__title::before {
+  display: block;
+  content: '';
+  height: 70px;
+  margin-bottom: 25px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card__title.icon-analysis::before {
+  background-image: url("../img/features/analysis.svg");
+}
+
+.card__title.icon-clean-design::before {
+  background-image: url("../img/features/clean-design.svg");
+}
+
+.card__title.icon-messaging::before {
+  background-image: url("../img/features/messaging.svg");
+}
+
+.how-works__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.how-works__cards::before {
+  z-index: -1;
+  top: 50px;
+  left: 50px;
+  position: absolute;
+  border: 2px dashed #0f7bff;
+  width: 780px;
+  display: block;
+  content: '';
+  height: 2px;
+}
+
+.how-works__title::before {
+  display: block;
+  content: '';
+  height: 70px;
+  margin-bottom: 25px;
+  background-size: 70px 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.how-works__title.icon-create-an-account::before {
+  background-image: url("../img/how/create-an-account.svg");
+}
+
+.how-works__title.icon-confirm-email::before {
+  background-image: url("../img/how/confirm-email.svg");
+}
+
+.how-works__title.icon-see-results::before {
+  background-image: url("../img/how/see-results.svg");
 }
 /*# sourceMappingURL=main.css.map */

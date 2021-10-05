@@ -1,0 +1,16 @@
+@mixin generate-icons($icon-list) {
+  @if $icon-list==$feature-list-icon {
+    @each $icon-name in $feature-list-icon {
+      &.icon-#{$icon-name}::before {
+        background-image: url('../img/features/#{$icon-name}.svg');
+      }
+    }
+  }
+  @if $icon-list==$how-list-icon {
+    @each $icon-name in $how-list-icon {
+      &.icon-#{$icon-name}::before {
+        background-image: url('../img/how/#{$icon-name}.svg');
+      }
+    }
+  }
+}

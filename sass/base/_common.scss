@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: $primary-text-color;
+  background-color: $white-color;
+
+  font-family: $additional-font;
+  font-size: $main-font-size;
+
+  &.modal-open {
+    overflow: hidden; //JS
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+img,
+svg {
+  display: block;
+  height: auto;
+}
+
+// .container {
+//   max-width: 100%;
+//   margin: 0 auto;
+//   padding: 0 15px;
+
+//   @include adaptive-size(mobile) {
+//     max-width: 480px;
+//   }
+//   @include adaptive-size(tablet) {
+//     max-width: 768px;
+//   }
+//   @include adaptive-size(desktop) {
+//     max-width: 1200px;
+//   }
+// }

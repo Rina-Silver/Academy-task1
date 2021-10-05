@@ -1,1 +1,6 @@
-@import './base/common.scss';
+@import './untils/variables';
+@import './untils/mixin';
+@import './base/common';
+
+@import './components/feature-list';
+@import './components/how-works-list';

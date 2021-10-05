@@ -1,0 +1,13 @@
+.card__title {
+  &::before {
+    display: block;
+    content: '';
+    height: 70px;
+    margin-bottom: 25px;
+
+    background-size: 70px 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @include generate-icons($feature-list-icon);
+}
