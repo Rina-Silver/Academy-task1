@@ -25,12 +25,15 @@
       <header class="header">
         <div class="header__container">
           <nav class="navigation" aria-label="Main navigation">
-            <a href="./index.html" aria-label="Logo AppSon" class="logo"
+            <a
+              href="./index.html"
+              aria-label="Logo AppSon"
+              class="logo header__logo"
               ><h1>AppSon</h1></a
             >
             <button
               type="button"
-              class="button navigation__button"
+              class="navigation__button"
               aria-expanded="false"
               aria-controls="menu-container"
               data-menu-button
@@ -64,7 +67,7 @@
               <li class="navigation__item"><a href="#Pricing">Pricing</a></li>
               <li class="navigation__item"><a href="#Pages">Pages</a></li>
             </ul>
-            <button type="button" class="button">SIGN UP</button>
+            <button type="button" class="button--sign">SIGN UP</button>
           </nav>
 
           <!-- Hero -->
@@ -76,8 +79,10 @@
               adipisicing elit, sed do eiusmod tempor incididunt ut labore et
               dolore magna aliqua.
             </p>
-            <button type="button" class="button">Download</button>
-            <button type="button" class="button-default">Free Trial</button>
+            <div class="button__wrapper">
+              <button type="button" class="button--active">Download</button>
+              <button type="button" class="button--default">Free Trial</button>
+            </div>
           </section>
           <!-- /Hero -->
         </div>
@@ -222,7 +227,7 @@
                   <li class="pricing-plan__text">Free Support</li>
                 </ul>
                 <p class="pricing-plan__price">$49.00</p>
-                <button type="button" class="button">Try Now</button>
+                <button type="button" class="button--active">Try Now</button>
               </div>
             </li>
             <li class="pricing-plan__item">
@@ -236,7 +241,7 @@
                   <li class="pricing-plan__text">Free Support</li>
                 </ul>
                 <p class="pricing-plan__price">$19.00</p>
-                <button type="button" class="button-default">Try Now</button>
+                <button type="button" class="button--default">Try Now</button>
               </div>
             </li>
           </ul>

@@ -1,12 +1,23 @@
-.button-default {
+.button--default {
   @extend %button;
-  padding: 14px 45px;
-  font-weight: bold;
-  font-size: toRem($main-font-size);
-  line-height: toLineHeight(20, 16);
+  @extend %button-bordered;
 
   color: $accent-color;
-  border: 2px solid $accent-color;
+}
 
-  border-radius: 25px;
+.button--active {
+  @extend %button;
+  @extend %button-bordered;
+
+  color: $secondary-text-color;
+  background-color: $accent-color;
+}
+
+.button--sign {
+  @extend %button;
+  @extend %button-bordered;
+  padding: 15px 44px;
+  border: transparent;
+  color: $secondary-text-color;
+  background-color: $accent-darker-color;
 }

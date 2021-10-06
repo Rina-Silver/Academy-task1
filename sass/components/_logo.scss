@@ -1,0 +1,33 @@
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 43px;
+  width: 94px;
+
+  font-weight: bold;
+  font-size: $second-main-font-size;
+  line-height: toLineHeight(24, 14);
+
+  color: $secondary-text-color;
+  background-color: $accent-color;
+  border-radius: 0px 0px 21.5px 21.5px;
+
+  @include adaptive-size(tablet) {
+    margin-left: 21px;
+
+    width: 120px;
+    height: 59px;
+
+    font-size: $subtitle-font-size;
+    line-height: toLineHeight(26, 18);
+  }
+
+  @include adaptive-size(desktop) {
+    width: 179px;
+    height: 100px;
+    margin-left: 121px;
+    font-size: toRem($card-title-size);
+  }
+}

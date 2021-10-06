@@ -1,0 +1,9 @@
+.hero {
+  & .button__wrapper {
+    display: flex;
+    flex-direction: column;
+    @include adaptive-size(tablet) {
+      flex-direction: row;
+    }
+  }
+}

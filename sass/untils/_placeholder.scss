@@ -3,10 +3,22 @@
 }
 %button {
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   cursor: pointer;
   font-family: inherit;
   border: transparent;
   background-color: inherit;
   box-sizing: border-box;
+}
+%button-bordered {
+  width: 166px;
+  padding: 14px 44px;
+
+  font-weight: bold;
+  font-size: toRem($main-font-size);
+  line-height: toLineHeight(20, 16);
+
+  border: 2px solid $accent-color;
+  border-radius: 25px;
 }
