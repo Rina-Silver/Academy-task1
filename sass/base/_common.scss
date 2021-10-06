@@ -64,28 +64,23 @@ a {
 
   grid-template-columns: repeat(3, 1fr);
   height: 100vh;
-  grid-template-rows: 100px 1fr 200px;
+  grid-template-rows: minmax(600px, 1042px) 1fr 200px;
   max-width: 100%;
   margin: 0 auto;
-  padding: 0 15px;
 
   @include adaptive-size(mobile) {
     max-width: 480px;
   }
   @include adaptive-size(tablet) {
-    grid-template-rows: 71px 1fr 100px;
+    grid-template-rows: 1042px 1fr 100px;
     max-width: 768px;
   }
   @include adaptive-size(desktop) {
-    grid-template-rows: 100px 1fr 100px;
+    grid-template-rows: 1029px 1fr 125px;
     max-width: 1920px;
   }
 }
 
-.header {
-  grid-area: header;
-  background-color: aqua;
-}
 .main {
   grid-area: main;
   background-color: coral;

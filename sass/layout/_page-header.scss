@@ -1,6 +1,31 @@
+.header {
+  grid-area: header;
+  background-image: url(../../img/header/blue-bg.svg);
+  background-repeat: no-repeat;
+  //   background-clip: border-box;
+  //   background-origin: border-box;
+  background-position: 25%;
+  background-size: cover;
+
+  @include adaptive-size(tablet) {
+    background-image: url(../../img/header/Devices.svg),
+      url(../../img/header/blue-bg.svg);
+    background-position: 50% 100%, bottom;
+    background-size: 48%, cover;
+  }
+}
+
+.navigation {
+  display: flex;
+}
+
 .navigation__button {
   position: relative;
   .icon-cross {
     position: fixed;
+  }
+
+  @include adaptive-size(tablet) {
+    display: none;
   }
 }

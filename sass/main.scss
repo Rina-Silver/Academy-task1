@@ -1,8 +1,13 @@
 @import './untils/variables';
 @import './untils/mixin';
+@import './untils/placeholder';
 @import './base/common';
+@import './untils/function';
 
 @import './layout/page-header';
+@import './layout/section';
+
 @import './components/menu-container';
+@import './components/button';
 @import './components/feature-list';
 @import './components/how-works-list';
