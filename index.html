@@ -207,14 +207,25 @@
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
             ipsum dolor sit amet.
           </p>
-          <button type="button" class="button">Monthly</button>
-          <button type="button" class="button">Yearly</button>
-          <!-- <fieldset id="plan">
-            <input type="radio" name="plan" id="Monthly" checked /><span
-              >Monthly</span
-            >
-            <input type="radio" name="plan" id="Yearly" /><span>Yearly</span>
-          </fieldset> -->
+          <!-- <div class="button__wrapper">
+            <button type="button" class="button--left">Monthly</button>
+            <button type="button" class="button--right">Yearly</button>
+          </div> -->
+
+          <fieldset id="plan" class="button__wrapper pricing-plan__buttons">
+            <input
+              class="button--left"
+              type="radio"
+              name="plan"
+              id="Monthly"
+              checked
+            />
+            <label for="Monthly">Monthly</label>
+
+            <input class="button--right" type="radio" name="plan" id="Yearly" />
+            <label for="Yearly">Yearly</label>
+          </fieldset>
+
           <ul class="pricing-plan__list">
             <li class="pricing-plan__item">
               <div class="card__up"><p class="card__title">Premium</p></div>
@@ -436,7 +447,7 @@
         <section class="section">
           <h2 class="section__title">Try 30 Days Free Trial</h2>
           <p class="section__text">No credit card reauired</p>
-          <button type="button" class="button">Get Stared</button>
+          <button type="button" class="button">Get Stared &#10230;</button>
         </section>
         <!-- /Free Trial -->
         <!-- Widget -->

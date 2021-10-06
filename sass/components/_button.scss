@@ -3,6 +3,13 @@
   @extend %button-bordered;
 
   color: $accent-color;
+  background-color: $white-color;
+
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+  }
 }
 
 .button--active {
@@ -11,6 +18,11 @@
 
   color: $secondary-text-color;
   background-color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $white-color;
+  }
 }
 
 .button--sign {
@@ -20,4 +32,44 @@
   border: transparent;
   color: $secondary-text-color;
   background-color: $accent-darker-color;
+  &:hover,
+  &:focus {
+    color: $accent-darker-color;
+    background-color: $white-color;
+    border: 2px solid $accent-darker-color;
+  }
+}
+
+.button--left {
+  @extend %button;
+  @extend %button-bordered;
+  padding: 14px 54px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+
+  color: $secondary-text-color;
+  background-color: $accent-color;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    background-color: $white-color;
+  }
+}
+
+.button--right {
+  @extend %button;
+  @extend %button-bordered;
+  padding: 14px 54px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+
+  color: $accent-color;
+  background-color: $white-color;
+
+  &:hover,
+  &:focus {
+    color: $secondary-text-color;
+    background-color: $accent-color;
+  }
 }

@@ -1,9 +1,37 @@
 .hero {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 655px;
+
+  margin-top: 28px;
+
+  @include adaptive-size(tablet) {
+    margin-top: 98px;
+  }
+
+  & .section__title {
+    margin-bottom: $set-gap;
+  }
+
+  & .section__text {
+    margin-bottom: $set-gap;
+  }
+
   & .button__wrapper {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
     @include adaptive-size(tablet) {
       flex-direction: row;
+    }
+  }
+
+  & .button--active {
+    @include adaptive-size(tablet-break) {
+      margin-bottom: $set-gap;
+    }
+
+    @include adaptive-size(tablet) {
+      margin-right: $set-gap;
     }
   }
 }

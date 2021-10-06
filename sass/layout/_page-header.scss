@@ -49,8 +49,9 @@
 
   & .button--sign {
     @include adaptive-size(tablet-break) {
+      width: 72px;
       margin-left: auto;
-      padding: 8px 24px;
+      padding: 8px 4px;
       margin-right: 24px;
     }
   }
