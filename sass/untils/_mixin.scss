@@ -13,6 +13,14 @@
       }
     }
   }
+
+  @if $icon-list==$pricing-plan {
+    @each $icon-name in $pricing-plan {
+      &.icon-#{$icon-name}::before {
+        background-image: url('../img/how/#{$icon-name}.svg');
+      }
+    }
+  }
 }
 
 @mixin adaptive-size($range) {

@@ -44,8 +44,10 @@
 }
 
 .how-works__item {
-  &:not(:last-child) {
-    margin-bottom: $set-gap;
+  @include adaptive-size(desktop-break) {
+    &:not(:last-child) {
+      margin-bottom: $set-gap;
+    }
   }
 
   @include adaptive-size(desktop) {

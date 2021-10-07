@@ -104,11 +104,12 @@
         background-image: url(../../img/about/easy-messaging.jpg);
 
         position: absolute;
-        top: 50%;
+
         right: 100%;
         left: -100%;
 
         @include adaptive-size(desktop) {
+          top: 50%;
           height: 373px;
           width: 558px;
           margin-right: 128px;

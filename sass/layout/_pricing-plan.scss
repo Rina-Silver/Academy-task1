@@ -1,7 +1,91 @@
 .pricing-plan {
+  padding: 70px 15px;
+  text-align: center;
+
+  @include adaptive-size(tablet) {
+    padding: 130px 15px;
+  }
+
+  @include adaptive-size(desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 130px 15px 129px 15px;
+  }
+
+  &__up-wrapper {
+    width: 332px;
+    text-align: left;
+    margin-right: 60px;
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: toRem($second-title-size);
+    line-height: toLineHeight(40, 32);
+    margin-bottom: $set-gap;
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: toLineHeight(24, 16);
+    margin-bottom: 40px;
+  }
+
+  &__list {
+    @include adaptive-size(tablet) {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @include adaptive-size(desktop) {
+        width: 775px;
+      }
+    }
+  }
+
+  &__item {
+    box-shadow: 0px 4px 20px rgba(0, 36, 80, 0.08);
+    border-radius: 5px;
+    padding: 41px 30px 46px 30px;
+
+    @include adaptive-size(tablet) {
+      flex-basis: calc((100% / 2) - #{$set-gap});
+    }
+  }
+
+  &__description {
+    margin-bottom: 26px;
+  }
+
+  &__point {
+    font-weight: 300;
+
+    line-height: toLineHeight(29, 16);
+  }
+
+  &__price {
+    font-weight: 500;
+    font-size: toRem($second-title-size);
+    line-height: toLineHeight(40, 32);
+    color: $accent-color;
+
+    margin-bottom: 25px;
+
+    & span {
+      font-size: toRem($subtitle-font-size);
+      line-height: toLineHeight(22, 18);
+    }
+  }
+
   & .button__wrapper {
     display: inline-flex;
     overflow: hidden;
+
+    @include adaptive-size(desktop-break) {
+      margin-bottom: 40px;
+    }
   }
 }
 
@@ -22,5 +106,42 @@
 
   & input[type='radio']:checked + label {
     background: #ffc5c5;
+  }
+}
+
+.card__plan-title {
+  font-weight: bold;
+  font-size: toRem($subtitle-font-size);
+  line-height: toLineHeight(22, 18);
+  margin-bottom: 25px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 114px;
+    height: 114px;
+    margin-bottom: 20px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  @include generate-icons($pricing-plan);
+}
+
+.card__up {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid #e9f3f8;
+  margin-bottom: 25px;
+}
+
+.pricing-plan__item:first-child {
+  @include adaptive-size(tablet-break) {
+    margin-bottom: 50px;
+  }
+  @include adaptive-size(tablet) {
+    margin-right: $set-gap;
   }
 }
