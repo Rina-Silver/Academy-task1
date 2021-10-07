@@ -372,7 +372,7 @@ a {
 }
 
 @media screen and (min-width: 1200px) {
-  .features {
+  .features__button {
     display: block;
   }
 }
@@ -384,15 +384,14 @@ a {
 
 @media screen and (min-width: 768px) {
   .about {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 74px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .about {
-    padding-top: 165px;
-    padding-bottom: 130px;
+    padding-bottom: 116px;
   }
 }
 
@@ -403,24 +402,30 @@ a {
   }
 }
 
-.about__item:first-child {
-  margin-bottom: 60px;
-}
-
 .about__subtitle {
-  text-align: center;
   font-weight: 500;
   font-size: 2rem;
   line-height: 1.25;
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767px) {
+  .about__subtitle {
+    text-align: center;
+  }
+}
+
 .about__description {
   text-align: justify;
-  text-indent: 1.5rem;
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 35px;
+}
+
+@media screen and (max-width: 767px) {
+  .about__description {
+    text-indent: 1.5rem;
+  }
 }
 
 .about__link {
@@ -445,6 +450,73 @@ a {
 .about__svg {
   fill: inherit;
   margin-left: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__item {
+    width: 356px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__item {
+    width: 476px;
+  }
+}
+
+.about__item:first-child {
+  margin-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .about__item:first-child {
+    margin-left: auto;
+    position: relative;
+  }
+  .about__item:first-child::before {
+    display: block;
+    content: '';
+    height: 265px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../img/about/easy-messaging.jpg);
+    position: absolute;
+    top: 50%;
+    right: 100%;
+    left: -100%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .about__item:first-child {
+    margin-bottom: 233px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about__item:last-child {
+    position: relative;
+  }
+  .about__item:last-child::after {
+    display: block;
+    content: '';
+    height: 265px;
+    margin-left: 20px;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../../img/about/keep-in-touch.jpg);
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    left: 100%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 
 .pricing-plan .button__wrapper {

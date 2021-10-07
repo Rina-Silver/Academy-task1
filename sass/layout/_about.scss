@@ -3,13 +3,13 @@
   padding-bottom: 28px;
 
   @include adaptive-size(tablet) {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 74px;
   }
 
   @include adaptive-size(desktop) {
-    padding-top: 165px;
-    padding-bottom: 130px;
+    // padding-top: 165px;
+    padding-bottom: 116px;
   }
 
   @include adaptive-size(desktop-break) {
@@ -17,26 +17,33 @@
     padding-left: 15px;
   }
 
-  &__item:first-child {
-    margin-bottom: 60px;
+  &__list {
+    //display: flex;
   }
 
   &__subtitle {
-    text-align: center;
     font-weight: 500;
     font-size: toRem($second-title-size);
     line-height: toLineHeight(40, 32);
     margin-bottom: $set-gap;
+
+    @include adaptive-size(tablet-break) {
+      text-align: center;
+    }
   }
 
   &__description {
     text-align: justify;
-    text-indent: 1.5rem;
+
     font-weight: 300;
     //@extend: 16px;
     line-height: toLineHeight(24, 16);
 
     margin-bottom: 35px;
+
+    @include adaptive-size(tablet-break) {
+      text-indent: 1.5rem;
+    }
   }
 
   &__link {
@@ -56,5 +63,69 @@
   &__svg {
     fill: inherit;
     margin-left: 15px;
+  }
+}
+
+.about__item {
+  @include adaptive-size(tablet) {
+    width: 356px;
+  }
+
+  @include adaptive-size(desktop) {
+    width: 476px;
+  }
+
+  &:first-child {
+    margin-bottom: 60px;
+    @include adaptive-size(tablet) {
+      margin-left: auto;
+      position: relative;
+
+      &::before {
+        display: block;
+        content: '';
+        height: 265px;
+        margin-right: 20px;
+        //background-size: 400px 400px;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../../img/about/easy-messaging.jpg);
+
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        left: -100%;
+        transform: translateY(-50%);
+      }
+    }
+    @include adaptive-size(desktop) {
+      margin-bottom: 233px;
+    }
+  }
+
+  &:last-child {
+    @include adaptive-size(tablet) {
+      position: relative;
+
+      &::after {
+        display: block;
+        content: '';
+        height: 265px;
+        margin-left: 20px;
+        //background-size: 400px 400px;
+        border-radius: 20px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(../../img/about/keep-in-touch.jpg);
+        position: absolute;
+        top: 50%;
+        right: -100%;
+        left: 100%;
+        transform: translateY(-50%);
+      }
+    }
+    @include adaptive-size(desktop) {
+    }
   }
 }

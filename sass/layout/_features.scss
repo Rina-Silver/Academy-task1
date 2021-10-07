@@ -43,9 +43,9 @@
     top: -35px;
     transform: translateX(50%);
     background-image: url(../../img/features/scrol-down.svg);
-  }
 
-  @include adaptive-size(desktop) {
-    display: block;
+    @include adaptive-size(desktop) {
+      display: block;
+    }
   }
 }
