@@ -592,6 +592,13 @@ a {
   background-color: #f5fcfd;
 }
 
+@media screen and (min-width: 1200px) {
+  .how-works {
+    padding-top: 119px;
+    padding-bottom: 137px;
+  }
+}
+
 .how-works__title {
   font-weight: normal;
   font-size: 2rem;
@@ -603,6 +610,13 @@ a {
   font-weight: 300;
   line-height: 1.5;
   margin-bottom: 45px;
+}
+
+@media screen and (min-width: 1200px) {
+  .how-works__text {
+    width: 722px;
+    margin: 0 auto 45px auto;
+  }
 }
 
 .how-works__subtitle {
@@ -619,6 +633,15 @@ a {
 
 .how-works__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .how-works__item {
+    width: 333px;
+  }
+  .how-works__item:not(:last-child) {
+    margin-right: 58px;
+  }
 }
 
 .pricing-plan .button__wrapper {
@@ -915,7 +938,33 @@ a {
   position: relative;
 }
 
+.how-works__cards::before {
+  z-index: 0;
+  top: 35px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  position: absolute;
+  border: 2px dashed #0f7bff;
+  width: 780px;
+  display: block;
+  content: '';
+  height: 2px;
+}
+
+@media screen and (min-width: 768px) {
+  .how-works__cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1113px;
+    margin: 0 auto;
+  }
+}
+
 .how-works__subtitle::before {
+  z-index: 1;
+  position: relative;
   display: block;
   content: '';
   height: 70px;
@@ -935,13 +984,5 @@ a {
 
 .how-works__subtitle.icon-see-results::before {
   background-image: url("../img/how/see-results.svg");
-}
-
-@media screen and (min-width: 768px) {
-  .how-works__subtitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 /*# sourceMappingURL=main.css.map */

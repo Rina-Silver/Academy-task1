@@ -3,6 +3,11 @@
   text-align: center;
   background-color: $bg-color;
 
+  @include adaptive-size(desktop) {
+    padding-top: 119px;
+    padding-bottom: 137px;
+  }
+
   &__title {
     font-weight: normal;
     font-size: toRem($second-title-size);
@@ -16,6 +21,11 @@
     line-height: toLineHeight(24, 16);
 
     margin-bottom: 45px;
+
+    @include adaptive-size(desktop) {
+      width: 722px;
+      margin: 0 auto 45px auto;
+    }
   }
 
   &__subtitle {
@@ -36,5 +46,13 @@
 .how-works__item {
   &:not(:last-child) {
     margin-bottom: $set-gap;
+  }
+
+  @include adaptive-size(desktop) {
+    width: 333px;
+
+    &:not(:last-child) {
+      margin-right: 58px;
+    }
   }
 }
