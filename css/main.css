@@ -377,6 +377,11 @@ a {
   }
 }
 
+.about {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
 @media screen and (min-width: 768px) {
   .about {
     padding-top: 70px;
@@ -396,6 +401,50 @@ a {
     padding-right: 15px;
     padding-left: 15px;
   }
+}
+
+.about__item:first-child {
+  margin-bottom: 60px;
+}
+
+.about__subtitle {
+  text-align: center;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+.about__description {
+  text-align: justify;
+  text-indent: 1.5rem;
+  font-weight: 300;
+  line-height: 1.5;
+  margin-bottom: 35px;
+}
+
+.about__link {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #0063dd;
+  fill: #0063dd;
+}
+
+.about__link:hover, .about__link:focus {
+  -webkit-filter: drop-shadow(3px 5px 2px #929292);
+          filter: drop-shadow(3px 5px 2px #929292);
+}
+
+.about__svg {
+  fill: inherit;
+  margin-left: 15px;
 }
 
 .pricing-plan .button__wrapper {

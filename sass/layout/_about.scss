@@ -1,4 +1,7 @@
 .about {
+  padding-top: 28px;
+  padding-bottom: 28px;
+
   @include adaptive-size(tablet) {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -12,5 +15,46 @@
   @include adaptive-size(desktop-break) {
     padding-right: 15px;
     padding-left: 15px;
+  }
+
+  &__item:first-child {
+    margin-bottom: 60px;
+  }
+
+  &__subtitle {
+    text-align: center;
+    font-weight: 500;
+    font-size: toRem($second-title-size);
+    line-height: toLineHeight(40, 32);
+    margin-bottom: $set-gap;
+  }
+
+  &__description {
+    text-align: justify;
+    text-indent: 1.5rem;
+    font-weight: 300;
+    //@extend: 16px;
+    line-height: toLineHeight(24, 16);
+
+    margin-bottom: 35px;
+  }
+
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: $accent-darker-color;
+    fill: $accent-darker-color;
+
+    &:hover,
+    &:focus {
+      //text-shadow: 0px 2px 10px $third-text-color;
+      filter: drop-shadow(3px 5px 2px $third-text-color);
+    }
+  }
+
+  &__svg {
+    fill: inherit;
+    margin-left: 15px;
   }
 }
