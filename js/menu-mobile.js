@@ -1,4 +1,4 @@
-(() => {
+export function openModal() {
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const mobileMenuRef = document.querySelector('[data-menu]');
 
@@ -13,4 +13,4 @@
 
     document.body.classList.toggle('modal-open');
   });
-})();
+}
