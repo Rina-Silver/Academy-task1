@@ -80,6 +80,13 @@
   position: relative;
   width: 40px;
   height: 40px;
+  fill: $primary-text-color;
+
+  &:hover,
+  &:focus {
+    fill: $accent-darker-color;
+  }
+
   .icon-cross {
     position: fixed;
   }
