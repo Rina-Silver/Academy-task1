@@ -1,4 +1,65 @@
-.card__title {
+.features {
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @include adaptive-size(tablet) {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+
+  &__item {
+    max-width: 362px;
+    height: 290px;
+    background-color: $white-color;
+    box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+    border-radius: 5px;
+    padding-top: 40px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 47px;
+
+    @include adaptive-size(tablet-break) {
+      &:not(:first-child) {
+        margin-top: 40px;
+      }
+    }
+
+    @include adaptive-size(tablet) {
+      &:not(:first-child) {
+        margin-left: $set-gap;
+      }
+
+      &:nth-child(2) {
+        margin-top: 50px;
+        align-self: flex-end;
+      }
+    }
+  }
+
+  & .card__description {
+    font-weight: 300;
+
+    line-height: toLineHeight(20, 16);
+
+    @include adaptive-size(tablet) {
+      font-size: toRem($second-main-font-size);
+    }
+
+    @include adaptive-size(desktop) {
+      font-size: toRem($main-font-size);
+    }
+  }
+}
+
+.features .card__title {
+  margin-bottom: 25px;
+  font-weight: 500;
+  font-size: toRem($subtitle-font-size);
+  line-height: toLineHeight(22, 18);
+
   &::before {
     display: block;
     content: '';

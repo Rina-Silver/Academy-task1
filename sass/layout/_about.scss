@@ -1,0 +1,16 @@
+.about {
+  @include adaptive-size(tablet) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  @include adaptive-size(desktop) {
+    padding-top: 165px;
+    padding-bottom: 130px;
+  }
+
+  @include adaptive-size(desktop-break) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}

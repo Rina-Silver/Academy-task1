@@ -1,0 +1,51 @@
+.features {
+  position: relative;
+
+  text-align: center;
+
+  padding-top: 28px;
+  padding-bottom: 28px;
+
+  background-color: $bg-color;
+
+  @include adaptive-size(tablet-break) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @include adaptive-size(tablet) {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    height: 500px;
+  }
+
+  @include adaptive-size(desktop) {
+    padding-top: 165px;
+    padding-bottom: 130px;
+    height: 635px;
+  }
+
+  @include adaptive-size(desktop-break) {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  &__button {
+    @extend %button;
+    background: transparent;
+    display: none;
+
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    right: 50%;
+    top: -35px;
+    transform: translateX(50%);
+    background-image: url(../../img/features/scrol-down.svg);
+  }
+
+  @include adaptive-size(desktop) {
+    display: block;
+  }
+}
