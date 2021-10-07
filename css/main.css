@@ -672,10 +672,12 @@ a {
   }
 }
 
-.pricing-plan__up-wrapper {
-  width: 332px;
-  text-align: left;
-  margin-right: 60px;
+@media screen and (min-width: 1200px) {
+  .pricing-plan__up-wrapper {
+    text-align: left;
+    width: 332px;
+    margin-right: 60px;
+  }
 }
 
 .pricing-plan__title {
@@ -760,6 +762,18 @@ a {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .pricing-plan .button__wrapper {
+    width: 332px;
+  }
+}
+
+.pricing-plan__buttons {
+  border: transparent;
+  color: #0f7bff;
+  font-weight: bold;
+}
+
 .pricing-plan__buttons input[type='radio'] {
   display: none;
 }
@@ -768,10 +782,9 @@ a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 0px 15px;
-  line-height: 34px;
-  border: 1px solid #999;
-  border-right: none;
+  padding: 15px 40px;
+  line-height: 1.25;
+  border: 2px solid #0f7bff;
   cursor: pointer;
   -webkit-user-select: none;
      -moz-user-select: none;
@@ -779,8 +792,27 @@ a {
           user-select: none;
 }
 
+@media screen and (min-width: 768px) {
+  .pricing-plan__buttons label {
+    padding: 15px 54px;
+  }
+}
+
+.pricing-plan__buttons .label__button--right {
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  border-left: none;
+}
+
+.pricing-plan__buttons .label__button--left {
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  border-right: none;
+}
+
 .pricing-plan__buttons input[type='radio']:checked + label {
-  background: #ffc5c5;
+  color: #ffffff;
+  background: #0f7bff;
 }
 
 .card__plan-title {
