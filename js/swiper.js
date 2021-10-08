@@ -1,8 +1,3 @@
-const swiperMobile = new Swiper('.swiper', {
-  slidesPerView: 1,
-  spaceBetween: 30,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-});
+
+
+
