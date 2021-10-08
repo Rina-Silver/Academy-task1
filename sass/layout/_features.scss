@@ -40,7 +40,7 @@
     position: absolute;
     right: 50%;
     top: -57px;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     background-image: url(../../img/features/scrol-down.svg);
 
     @include adaptive-size(desktop) {

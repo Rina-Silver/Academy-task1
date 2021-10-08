@@ -1,11 +1,11 @@
 .features {
   @include adaptive-size(desktop) {
     display: none;
-    transition-property: opacity, visibility, transform, display;
+    transition-property: opacity, visibility, transform;
     transform: translateY(100%);
     transition-timing-function: $timing-function;
-    transition-duration: 500ms;
-    transition-delay: 1000ms;
+    transition-duration: 250ms;
+    transition-delay: 250ms;
     opacity: 0;
     visibility: hidden;
 

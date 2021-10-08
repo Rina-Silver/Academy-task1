@@ -896,6 +896,7 @@ a {
 
 .testimonials__item {
   padding: 40px 32px;
+  background-color: #f5fcfd;
   -webkit-box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
           box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
   border-radius: 5px;
@@ -933,7 +934,7 @@ a {
   color: #999999;
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1200px) {
   .testimonials {
     position: relative;
   }
@@ -953,6 +954,7 @@ a {
 }
 
 .testimonials__item {
+  background-color: #f5fcfd;
   position: relative;
 }
 
@@ -966,10 +968,6 @@ a {
   .testimonials__item:not(:last-child) {
     margin-right: 30px;
   }
-}
-
-.swiper {
-  width: 100%;
 }
 
 .news {
@@ -1650,10 +1648,10 @@ a {
             transform: translateY(100%);
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition-duration: 500ms;
-            transition-duration: 500ms;
-    -webkit-transition-delay: 1000ms;
-            transition-delay: 1000ms;
+    -webkit-transition-duration: 250ms;
+            transition-duration: 250ms;
+    -webkit-transition-delay: 250ms;
+            transition-delay: 250ms;
     opacity: 0;
     visibility: hidden;
   }
