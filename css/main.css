@@ -1,4 +1,4 @@
-.navigation__button, .features__button, .button--default, .button--active, .button--sign, .button--left, .button--right, .button--with-icon {
+.navigation__button, .features__button, .subscribe__button, .button--default, .button--active, .button--sign, .button--left, .button--right, .button--with-icon {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -16,7 +16,7 @@
           box-sizing: border-box;
 }
 
-.button--default, .button--active, .button--sign, .button--left, .button--right, .button--with-icon {
+.subscribe__button, .button--default, .button--active, .button--sign, .button--left, .button--right, .button--with-icon {
   width: 166px;
   padding: 14px 44px;
   font-weight: bold;
@@ -1236,6 +1236,32 @@ a {
   margin-left: 15px;
 }
 
+.subscribe {
+  text-align: center;
+  padding: 70px 15px;
+  background-color: #0f7bff;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe {
+    padding: 75px 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    padding: 118px 15px;
+  }
+}
+
+.subscribe__title {
+  font-weight: bold;
+  font-size: 2.25rem;
+  line-height: 1.25;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
 @media screen and (max-width: 767px) {
   .navigation__list {
     position: fixed;
@@ -1295,6 +1321,43 @@ a {
 .navigation__button.is-open .icon-cross {
   display: block;
   z-index: 4;
+}
+
+.subscribe__form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  font-size: inherit;
+  line-height: 1.5;
+}
+
+.subscribe__input {
+  cursor: pointer;
+  font-family: inherit;
+  border: transparent;
+  background-color: #0063dd;
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 13px 28px;
+  overflow: hidden;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+}
+
+.subscribe__button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 2px solid #ffffff;
+  color: #0063dd;
+  background-color: #ffffff;
+}
+
+.subscribe__button:hover, .subscribe__button:focus {
+  border: 2px solid #999999;
+  color: #ffffff;
+  background-color: #999999;
 }
 
 .button--default {

@@ -1,0 +1,23 @@
+.subscribe {
+  text-align: center;
+  padding: 70px 15px;
+
+  background-color: $accent-color;
+
+  @include adaptive-size(tablet) {
+    padding: 75px 15px;
+  }
+
+  @include adaptive-size(desktop) {
+    padding: 118px 15px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: toRem($first-title-size);
+    line-height: toLineHeight(45, 36);
+
+    color: $secondary-text-color;
+    margin-bottom: $set-gap;
+  }
+}

@@ -1,0 +1,42 @@
+.subscribe {
+  &__form {
+    display: inline-flex;
+    text-align: center;
+    font-size: inherit;
+    line-height: toLineHeight(24, 16);
+  }
+
+  &__input {
+    cursor: pointer;
+    font-family: inherit;
+    border: transparent;
+    background-color: $accent-darker-color;
+    color: $secondary-text-color;
+    box-sizing: border-box;
+
+    padding: 13px 28px;
+    overflow: hidden;
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+
+  &__button {
+    @extend %button;
+    @extend %button-bordered;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+
+    border: 2px solid $white-color;
+
+    color: $accent-darker-color;
+    background-color: $white-color;
+
+    &:hover,
+    &:focus {
+      border: 2px solid $light-text-color;
+      color: $secondary-text-color;
+      background-color: $light-text-color;
+    }
+  }
+}
