@@ -1,5 +1,8 @@
 .testimonials {
+  position: relative;
   padding: 70px 15px;
+  overflow: hidden;
+  background-color: $bg-color;
 
   @include adaptive-size(desktop) {
     padding: 112px 0px 144px 0px;
@@ -11,17 +14,19 @@
     margin-bottom: 40px;
   }
 
+  &__wrapper {
+    @include adaptive-size(desktop) {
+      width: 55%;
+      margin-left: auto;
+    }
+  }
+
   &__item {
-    position: relative;
     padding: 40px 32px;
 
     box-shadow: 0px 4px 20px rgba(0, 70, 156, 0.08);
 
     border-radius: 5px;
-
-    // &:not(:last-child) {
-    //   margin-right: $set-gap;
-    // }
   }
 
   &__icon {
@@ -57,4 +62,41 @@
     line-height: toLineHeight(20, 16);
     color: $light-text-color;
   }
+}
+
+.testimonials {
+  @include adaptive-size(desktop) {
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 902px;
+      height: 601px;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-image: url(../../img/testimonials/trasted.png);
+      background-repeat: no-repeat;
+    }
+  }
+}
+
+.testimonials__item {
+  background-color: $bg-color;
+  position: relative;
+  @include adaptive-size(tablet) {
+    width: 362px;
+  }
+
+  &:not(:last-child) {
+    @include adaptive-size(tablet) {
+      margin-right: $set-gap;
+    }
+  }
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }

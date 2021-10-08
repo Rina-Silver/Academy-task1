@@ -22,3 +22,17 @@
   border: 2px solid $accent-color;
   border-radius: 25px;
 }
+
+%section-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: $accent-darker-color;
+  fill: $accent-darker-color;
+
+  &:hover,
+  &:focus {
+    //text-shadow: 0px 2px 10px $third-text-color;
+    filter: drop-shadow(3px 5px 2px $third-text-color);
+  }
+}

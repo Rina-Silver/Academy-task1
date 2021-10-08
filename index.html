@@ -7,10 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Homepage</title>
     <link
+      type="image/x-icon"
+      rel="shortcut icon"
+      href="https://faviconka.ru/ico/1/faviconka.ru_1_101236.ico"
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
       integrity="sha512-Zx6MlUMKSVJoQ+83OwhdILe8cSEsCzfqThJd7J/VA2UrK6Ctj85p+xzqfyuNXE5B1k25uUdmJ2OzItbBy9GHAQ=="
       crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -290,187 +299,278 @@
         <!-- /Pricing Plan -->
         <!-- Testimonials -->
         <section class="section testimonials">
-          <h2 class="section__title testimonials__section-title">
-            Trusted By More Than 55M Peoples
-          </h2>
-          <ul class="testimonials__cards">
-            <li class="testimonials__item">
-              <p class="testimonials__title">Raisa Moni</p>
-              <p class="testimonials__subtitle">Envato Customer</p>
-              <a
-                class="testimonials__icon"
-                href="http://twitter.com"
-                target="_blank"
-                rel="noopener nofollow "
-              >
-                <svg
-                  class="testimonials__svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
+          <div class="testimonials__wrapper">
+            <h2 class="section__title testimonials__section-title">
+              Trusted By More Than 55M Peoples
+            </h2>
+            <!-- ! -->
+
+            <!-- ! -->
+            <ul class="testimonials__cards">
+              <li class="testimonials__item">
+                <p class="testimonials__title">Raisa Moni</p>
+                <p class="testimonials__subtitle">Envato Customer</p>
+                <a
+                  class="testimonials__icon"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="noopener nofollow "
                 >
-                  <path
-                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
-                  /></svg
-              ></a>
-              <p class="testimonials__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore etamet.
-              </p>
-            </li>
-            <li class="testimonials__item">
-              <p class="testimonials__title">Raisa Moni</p>
-              <p class="testimonials__subtitle">Envato Customer</p>
-              <a
-                class="testimonials__icon"
-                href="http://twitter.com"
-                target="_blank"
-                rel="noopener nofollow "
-                ><svg
-                  class="testimonials__svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
-                  /></svg
-              ></a>
-              <p class="testimonials__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore etamet.
-              </p>
-            </li>
-            <li class="testimonials__item">
-              <p class="testimonials__title">Raisa Moni</p>
-              <p class="testimonials__subtitle">Envato Customer</p>
-              <a
-                class="testimonials__icon"
-                href="http://twitter.com"
-                target="_blank"
-                rel="noopener nofollow "
-                ><svg
-                  class="testimonials__svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
-                  /></svg
-              ></a>
-              <p class="testimonials__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore etamet.
-              </p>
-            </li>
-            <li class="testimonials__item">
-              <p class="testimonials__title">Raisa Moni</p>
-              <p class="testimonials__subtitle">Envato Customer</p>
-              <a
-                class="testimonials__icon"
-                href="http://twitter.com"
-                target="_blank"
-                rel="noopener nofollow "
-                ><svg
-                  class="testimonials__svg"
-                  width="30"
-                  height="30"
-                  viewBox="0 0 30 30"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
-                  /></svg
-              ></a>
-              <p class="testimonials__text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incididunt ut labore etamet.
-              </p>
-            </li>
-          </ul>
+                  <svg
+                    class="testimonials__svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    /></svg
+                ></a>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore etamet.
+                </p>
+              </li>
+              <li class="testimonials__item">
+                <p class="testimonials__title">Raisa Moni</p>
+                <p class="testimonials__subtitle">Envato Customer</p>
+                <a
+                  class="testimonials__icon"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="noopener nofollow "
+                  ><svg
+                    class="testimonials__svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    /></svg
+                ></a>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore etamet.
+                </p>
+              </li>
+              <li class="testimonials__item">
+                <p class="testimonials__title">Raisa Moni</p>
+                <p class="testimonials__subtitle">Envato Customer</p>
+                <a
+                  class="testimonials__icon"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="noopener nofollow "
+                  ><svg
+                    class="testimonials__svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    /></svg
+                ></a>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore etamet.
+                </p>
+              </li>
+              <li class="testimonials__item">
+                <p class="testimonials__title">Raisa Moni</p>
+                <p class="testimonials__subtitle">Envato Customer</p>
+                <a
+                  class="testimonials__icon"
+                  href="http://twitter.com"
+                  target="_blank"
+                  rel="noopener nofollow "
+                  ><svg
+                    class="testimonials__svg"
+                    width="30"
+                    height="30"
+                    viewBox="0 0 30 30"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M27.188 7.45c-.897.387-1.873.665-2.877.774a4.984 4.984 0 0 0 2.197-2.754 9.863 9.863 0 0 1-3.17 1.207 4.984 4.984 0 0 0-3.65-1.58 4.994 4.994 0 0 0-4.996 4.999c0 .386.047.773.123 1.145a14.197 14.197 0 0 1-10.3-5.23 4.96 4.96 0 0 0-.68 2.523c0 1.735.882 3.264 2.227 4.163a5.04 5.04 0 0 1-2.26-.635v.061a4.997 4.997 0 0 0 4.006 4.904c-.43.112-.872.169-1.316.17-.325 0-.633-.032-.943-.076a5.004 5.004 0 0 0 4.67 3.466 10.012 10.012 0 0 1-6.202 2.136c-.42 0-.806-.015-1.207-.062a14.146 14.146 0 0 0 7.672 2.241c9.188 0 14.215-7.611 14.215-14.217 0-.217 0-.434-.014-.65a10.76 10.76 0 0 0 2.505-2.585Z"
+                    /></svg
+                ></a>
+                <p class="testimonials__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore etamet.
+                </p>
+              </li>
+            </ul>
+          </div>
         </section>
         <!-- /Testimonials -->
         <!-- Latest News -->
         <section id="Pages" class="section news">
-          <h2 class="section__title">Latest News From Us</h2>
-          <p class="section__text">
+          <h2 class="news__section-title">Latest News From Us</h2>
+          <p class="news__section-text">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem
             ipsum dolor sit amet.
           </p>
           <ul class="news__cards">
-            <li class="news__item">
-              <div class="card__thunb">
-                <img src="./img/latest/main.webp" alt="main" />
-              </div>
-              <div class="news__description">
-                <p class="news__title">
-                  The master bedroom suite is phenomenally spacious
-                </p>
-                <p class="news__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <a
-                  href="#"
-                  class="news__link"
-                  target="_blank"
-                  rel="noopener nofollow "
-                  >Continue Reading</a
-                >
-              </div>
+            <li class="news__item article-1">
+              <article>
+                <div class="news__card-thunb">
+                  <img
+                    class="article__img"
+                    src="./img/latest/main.webp"
+                    alt="main"
+                  />
+                </div>
+                <div class="news__description">
+                  <p class="news__title">
+                    The master bedroom suite is phenomenally spacious
+                  </p>
+                  <p class="news__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore
+                    magna aliqua.
+                  </p>
+                  <a
+                    href="#"
+                    class="news__link"
+                    target="_blank"
+                    rel="noopener nofollow "
+                    >Continue Reading
+                    <svg
+                      class="news__svg"
+                      width="67"
+                      viewBox="0 0 68 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M67.707 8.707a1 1 0 0 0 0-1.414L61.343.929a1 1 0 1 0-1.414 1.414L65.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h67V7H0v2Z"
+                      /></svg
+                  ></a>
+                </div>
+              </article>
             </li>
-            <li class="news__item">
-              <div class="card__thunb">
-                <img src="./img/latest/1.webp" alt="1pic" />
-              </div>
-              <div class="news__description">
-                <p class="news__title">
-                  The master bedroom suite is phenomenally spacious
-                </p>
-                <p class="news__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod.
-                </p>
-              </div>
+            <li class="news__item article-2">
+              <article>
+                <div class="news__card-thunb">
+                  <img
+                    class="article__img"
+                    src="./img/latest/1.webp"
+                    alt="1pic"
+                  />
+                </div>
+                <div class="news__description">
+                  <p class="news__title">
+                    The master bedroom suite is phenomenally spacious
+                  </p>
+                  <p class="news__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod.
+                  </p>
+                  <a
+                    href="#"
+                    class="news__link"
+                    target="_blank"
+                    rel="noopener nofollow "
+                    >Continue Reading
+                    <svg
+                      class="news__svg"
+                      width="67"
+                      viewBox="0 0 68 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M67.707 8.707a1 1 0 0 0 0-1.414L61.343.929a1 1 0 1 0-1.414 1.414L65.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h67V7H0v2Z"
+                      /></svg
+                  ></a>
+                </div>
+              </article>
             </li>
-            <li class="news__item">
-              <div class="card__thunb">
-                <img src="./img/latest/2.webp" alt="2pic" />
-              </div>
-              <div class="news__description">
-                <p class="news__title">
-                  The master bedroom suite is phenomenally spacious
-                </p>
-                <p class="news__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod.
-                </p>
-              </div>
+            <li class="news__item article-3">
+              <article>
+                <div class="news__card-thunb">
+                  <img
+                    class="article__img"
+                    src="./img/latest/2.webp"
+                    alt="2pic"
+                  />
+                </div>
+                <div class="news__description">
+                  <p class="news__title">
+                    The master bedroom suite is phenomenally spacious
+                  </p>
+                  <p class="news__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod.
+                  </p>
+                  <a
+                    href="#"
+                    class="news__link"
+                    target="_blank"
+                    rel="noopener nofollow "
+                    >Continue Reading
+                    <svg
+                      class="news__svg"
+                      width="67"
+                      viewBox="0 0 68 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M67.707 8.707a1 1 0 0 0 0-1.414L61.343.929a1 1 0 1 0-1.414 1.414L65.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h67V7H0v2Z"
+                      /></svg
+                  ></a>
+                </div>
+              </article>
             </li>
-            <li class="news__item">
-              <div class="card__thunb">
-                <img src="./img/latest/3.webp" alt="3pic" />
-              </div>
-              <div class="news__description">
-                <p class="news__title">
-                  The master bedroom suite is phenomenally spacious
-                </p>
-                <p class="news__text">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod.
-                </p>
-              </div>
+            <li class="news__item article-4">
+              <article>
+                <div class="news__card-thunb">
+                  <img
+                    class="article__img"
+                    src="./img/latest/3.webp"
+                    alt="3pic"
+                  />
+                </div>
+                <div class="news__description">
+                  <p class="news__title">
+                    The master bedroom suite is phenomenally spacious
+                  </p>
+                  <p class="news__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                    sed do eiusmod.
+                  </p>
+                  <a
+                    href="#"
+                    class="news__link"
+                    target="_blank"
+                    rel="noopener nofollow "
+                    >Continue Reading
+                    <svg
+                      class="news__svg"
+                      width="67"
+                      viewBox="0 0 68 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M67.707 8.707a1 1 0 0 0 0-1.414L61.343.929a1 1 0 1 0-1.414 1.414L65.586 8l-5.657 5.657a1 1 0 0 0 1.414 1.414l6.364-6.364ZM0 9h67V7H0v2Z"
+                      /></svg
+                  ></a>
+                </div>
+              </article>
             </li>
           </ul>
         </section>
@@ -597,5 +697,7 @@
       <!-- /FOOTER -->
     </div>
     <script src="./js/index.js" type="module"></script>
+    <script src="./js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   </body>
 </html>

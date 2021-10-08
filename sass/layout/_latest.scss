@@ -1,0 +1,122 @@
+.news {
+  padding: 70px 15px;
+
+  @include adaptive-size(tablet) {
+    padding: 130px 15px;
+  }
+
+  @include adaptive-size(desktop) {
+    padding: 130px 15px 106px 15px;
+  }
+
+  &__section-title {
+    text-align: center;
+    font-size: toRem($second-title-size);
+    line-height: toLineHeight(40, 32);
+    margin-bottom: 25px;
+  }
+
+  &__section-text {
+    text-align: center;
+    font-weight: 300;
+    line-height: toLineHeight(24, 16);
+    margin-bottom: 40px;
+  }
+
+  &__cards {
+    display: grid;
+    grid-gap: $set-gap;
+
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: 1fr;
+
+    @include adaptive-size(tablet) {
+      grid-template-rows: auto;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        'article-1 article-1 article-1'
+        'article-2 article-3 article-4';
+    }
+
+    @include adaptive-size(desktop) {
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: 2fr 1fr;
+      grid-template-areas:
+        'article-1 article-2'
+        'article-1 article-3'
+        'article-1 article-4 ';
+    }
+
+    .article-1 {
+      @include adaptive-size(tablet) {
+        grid-area: article-1;
+        grid-column: span 3;
+      }
+    }
+    .article-2 {
+      @include adaptive-size(tablet) {
+        grid-area: article-2;
+      }
+    }
+    .article-3 {
+      @include adaptive-size(tablet) {
+        grid-area: article-3;
+      }
+    }
+    .article-4 {
+      @include adaptive-size(tablet) {
+        grid-area: article-4;
+      }
+    }
+  }
+
+  &__item:not(:first-child) &__link {
+    @include adaptive-size(tablet) {
+      display: none;
+    }
+  }
+
+  &__item:first-child &__card-thunb {
+    .article__img {
+      @include adaptive-size(tablet) {
+        height: 290px;
+      }
+    }
+  }
+
+  &__card-thunb {
+    margin-bottom: $set-gap;
+    box-shadow: (0px 4px 20px rgba(0, 70, 156, 0.08));
+    border-radius: 5px;
+    overflow: hidden;
+
+    .article__img {
+      object-position: top;
+      object-fit: cover;
+      height: 150px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: toRem($card-title-size);
+    line-height: toLineHeight(36, 24);
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: toLineHeight(24, 16);
+  }
+
+  &__link {
+    @extend %section-link;
+    margin-top: 25px;
+  }
+
+  &__svg {
+    fill: inherit;
+    margin-left: 15px;
+  }
+}
