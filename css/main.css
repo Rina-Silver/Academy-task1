@@ -380,10 +380,10 @@ a {
   width: 114px;
   height: 114px;
   position: absolute;
-  right: 50%;
+  right: 46%;
   top: -57px;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-image: url(../../img/features/scrol-down.svg);
 }
 
@@ -1640,10 +1640,10 @@ a {
 @media screen and (min-width: 1200px) {
   .features {
     display: none;
-    -webkit-transition-property: opacity, visibility, display, -webkit-transform;
-    transition-property: opacity, visibility, display, -webkit-transform;
-    transition-property: opacity, visibility, transform, display;
-    transition-property: opacity, visibility, transform, display, -webkit-transform;
+    -webkit-transition-property: opacity, visibility, -webkit-transform;
+    transition-property: opacity, visibility, -webkit-transform;
+    transition-property: opacity, visibility, transform;
+    transition-property: opacity, visibility, transform, -webkit-transform;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
