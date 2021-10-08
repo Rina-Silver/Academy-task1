@@ -25,22 +25,28 @@
 
   &__cards {
     display: grid;
-    grid-gap: $set-gap;
 
     grid-template-rows: repeat(4, auto);
     grid-template-columns: 1fr;
 
     @include adaptive-size(tablet) {
       grid-template-rows: auto;
-      grid-template-columns: 1fr;
+      grid-template-columns: 226px;
       grid-template-areas:
         'article-1 article-1 article-1'
         'article-2 article-3 article-4';
     }
 
+    @include adaptive-size(desktop-break) {
+      grid-gap: $set-gap;
+    }
+
     @include adaptive-size(desktop) {
-      grid-template-rows: repeat(3, 1fr);
-      grid-template-columns: 2fr 1fr;
+      max-width: 1197px;
+      margin: 0 auto;
+      grid-column-gap: $set-gap;
+      //   grid-template-rows: auto;
+      grid-template-columns: 558px 1fr;
       grid-template-areas:
         'article-1 article-2'
         'article-1 article-3'
@@ -50,7 +56,14 @@
     .article-1 {
       @include adaptive-size(tablet) {
         grid-area: article-1;
+      }
+      @include adaptive-size(desktop-break) {
         grid-column: span 3;
+      }
+
+      @include adaptive-size(desktop) {
+        // grid-row: span 2;
+        // grid-column: 558px;
       }
     }
     .article-2 {
@@ -70,6 +83,12 @@
     }
   }
 
+  &__description {
+    @include adaptive-size(desktop) {
+      flex-basis: 413px;
+    }
+  }
+
   &__item:not(:first-child) &__link {
     @include adaptive-size(tablet) {
       display: none;
@@ -77,6 +96,10 @@
   }
 
   &__item:first-child &__card-thunb {
+    @include adaptive-size(tablet) {
+      margin-bottom: $set-gap;
+    }
+
     .article__img {
       @include adaptive-size(tablet) {
         height: 290px;
@@ -84,17 +107,41 @@
     }
   }
 
+  &__item:nth-last-child(-n + 3) {
+    background-color: lightseagreen;
+
+    article {
+      @include adaptive-size(desktop) {
+        display: flex;
+        align-items: center;
+      }
+    }
+
+    .news__card-thunb {
+      @include adaptive-size(desktop) {
+        margin-right: $set-gap;
+      }
+    }
+  }
+
   &__card-thunb {
-    margin-bottom: $set-gap;
     box-shadow: (0px 4px 20px rgba(0, 70, 156, 0.08));
     border-radius: 5px;
     overflow: hidden;
 
+    @include adaptive-size(desktop-break) {
+      margin-bottom: $set-gap;
+    }
+
     .article__img {
       object-position: top;
       object-fit: cover;
-      height: 150px;
+
       width: 100%;
+
+      @include adaptive-size(desktop-break) {
+        height: 150px;
+      }
     }
   }
 
