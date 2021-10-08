@@ -65,7 +65,7 @@ a {
 
   grid-template-columns: repeat(3, 1fr);
   height: 100vh;
-  grid-template-rows: minmax(600px, 1042px) 1fr 200px;
+  grid-template-rows: minmax(600px, 1042px) 1fr 270px;
   max-width: 100%;
   margin: 0 auto;
 
@@ -73,19 +73,15 @@ a {
     max-width: 480px;
   }
   @include adaptive-size(tablet) {
-    grid-template-rows: minmax(700px, 1042px) 1fr 100px;
+    grid-template-rows: minmax(700px, 1042px) 1fr 250px;
     max-width: 768px;
   }
   @include adaptive-size(desktop) {
-    grid-template-rows: 1029px 1fr 125px;
+    grid-template-rows: 1029px 1fr minmax(125px, 200px);
     max-width: 1920px;
   }
 }
 
 .main {
   grid-area: main;
-}
-
-.footer {
-  grid-area: footer;
 }

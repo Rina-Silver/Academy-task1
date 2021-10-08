@@ -1,4 +1,19 @@
 .features {
+  @include adaptive-size(desktop) {
+    transition-property: opacity, visibility, transform;
+    transform: translateY(100%);
+    transition-timing-function: $timing-function;
+    transition-duration: 250ms;
+    opacity: 0;
+    visibility: hidden;
+
+    &.is-open {
+      display: flex;
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
   &__cards {
     display: flex;
     flex-direction: column;

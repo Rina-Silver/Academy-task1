@@ -65,7 +65,7 @@
 }
 
 .testimonials {
-  @include adaptive-size(desktop) {
+  @media screen and (min-width: 1920px) {
     position: relative;
     &::before {
       position: absolute;
@@ -73,6 +73,7 @@
       display: block;
       width: 902px;
       height: 601px;
+
       top: 50%;
       left: 0;
       transform: translateY(-50%);
@@ -83,7 +84,7 @@
 }
 
 .testimonials__item {
-  background-color: $bg-color;
+  // background-color: $bg-color;
   position: relative;
   @include adaptive-size(tablet) {
     width: 362px;

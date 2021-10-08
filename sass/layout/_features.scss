@@ -46,6 +46,10 @@
 
     @include adaptive-size(desktop) {
       display: block;
+      transform: rotate(0);
+      &.is-open {
+        transform: rotate(180deg);
+      }
     }
   }
 }
