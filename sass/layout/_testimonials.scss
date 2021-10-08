@@ -98,6 +98,9 @@
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
+  @include adaptive-size(tablet) {
+  }
+  @include adaptive-size(desktop) {
+  }
 }

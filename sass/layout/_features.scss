@@ -1,6 +1,4 @@
 .features {
-  position: relative;
-
   text-align: center;
 
   padding-top: 28px;
@@ -33,6 +31,7 @@
 
   &__button {
     @extend %button;
+    z-index: 1;
     background: transparent;
     display: none;
 
@@ -41,7 +40,7 @@
     position: absolute;
     right: 50%;
     top: -57px;
-    transform: translateX(50%);
+    transform: translateX(-50%);
     background-image: url(../../img/features/scrol-down.svg);
 
     @include adaptive-size(desktop) {

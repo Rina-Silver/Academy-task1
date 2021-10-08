@@ -145,6 +145,7 @@ a {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-area: main;
+  position: relative;
 }
 
 .header {
@@ -329,7 +330,6 @@ a {
 }
 
 .features {
-  position: relative;
   text-align: center;
   padding-top: 28px;
   padding-bottom: 28px;
@@ -374,6 +374,7 @@ a {
 }
 
 .features__button {
+  z-index: 1;
   background: transparent;
   display: none;
   width: 114px;
@@ -381,8 +382,8 @@ a {
   position: absolute;
   right: 50%;
   top: -57px;
-  -webkit-transform: translateX(50%);
-          transform: translateX(50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-image: url(../../img/features/scrol-down.svg);
 }
 
@@ -968,8 +969,7 @@ a {
 }
 
 .swiper {
-  width: 600px;
-  height: 300px;
+  width: 100%;
 }
 
 .news {
@@ -1641,25 +1641,31 @@ a {
 
 @media screen and (min-width: 1200px) {
   .features {
-    -webkit-transition-property: opacity, visibility, -webkit-transform;
-    transition-property: opacity, visibility, -webkit-transform;
-    transition-property: opacity, visibility, transform;
-    transition-property: opacity, visibility, transform, -webkit-transform;
+    display: none;
+    -webkit-transition-property: opacity, visibility, display, -webkit-transform;
+    transition-property: opacity, visibility, display, -webkit-transform;
+    transition-property: opacity, visibility, transform, display;
+    transition-property: opacity, visibility, transform, display, -webkit-transform;
     -webkit-transform: translateY(100%);
             transform: translateY(100%);
     -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
             transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    -webkit-transition-duration: 250ms;
-            transition-duration: 250ms;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+    -webkit-transition-delay: 1000ms;
+            transition-delay: 1000ms;
     opacity: 0;
     visibility: hidden;
   }
   .features.is-open {
+    display: block;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     opacity: 1;
     visibility: visible;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -1674,6 +1680,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 768px) {
