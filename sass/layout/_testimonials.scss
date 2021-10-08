@@ -98,9 +98,4 @@
 }
 
 .swiper {
-  width: 100%;
-  @include adaptive-size(tablet) {
-  }
-  @include adaptive-size(desktop) {
-  }
 }
