@@ -21,6 +21,11 @@
     font-weight: 300;
     line-height: toLineHeight(24, 16);
     margin-bottom: 40px;
+
+    @include adaptive-size(desktop) {
+      margin: 0 auto 40px auto;
+      width: 722px;
+    }
   }
 
   &__cards {
@@ -45,12 +50,14 @@
       max-width: 1197px;
       margin: 0 auto;
       grid-column-gap: $set-gap;
+      grid-row-gap: $set-gap;
       //   grid-template-rows: auto;
       grid-template-columns: 558px 1fr;
       grid-template-areas:
         'article-1 article-2'
         'article-1 article-3'
-        'article-1 article-4 ';
+        'article-1 article-4 '
+        'article-1 article-5';
     }
 
     .article-1 {
@@ -108,8 +115,6 @@
   }
 
   &__item:nth-last-child(-n + 3) {
-    background-color: lightseagreen;
-
     article {
       @include adaptive-size(desktop) {
         display: flex;
