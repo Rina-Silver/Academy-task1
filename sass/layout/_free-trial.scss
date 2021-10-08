@@ -1,0 +1,53 @@
+.free-trial {
+  padding: 70px 15px;
+
+  background-color: $bg-color;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include adaptive-size(tablet) {
+    flex-direction: row;
+  }
+
+  @include adaptive-size(tablet-break) {
+    text-align: center;
+  }
+
+  @include adaptive-size(desktop) {
+    padding: 133px 15px;
+  }
+
+  &__wrapper {
+    @include adaptive-size(tablet) {
+      margin-right: 50px;
+    }
+
+    @include adaptive-size(desktop) {
+      margin-right: 154px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: toRem($second-title-size);
+    line-height: toLineHeight(40, 32);
+    margin-bottom: 25px;
+  }
+
+  &__text {
+    font-weight: 300;
+    line-height: toLineHeight(24, 16);
+
+    @include adaptive-size(tablet-break) {
+      margin-bottom: $set-gap;
+    }
+  }
+
+  &__svg {
+    fill: inherit;
+    margin-left: 15px;
+  }
+}

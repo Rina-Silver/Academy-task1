@@ -65,7 +65,7 @@
         grid-area: article-1;
       }
       @include adaptive-size(desktop-break) {
-        grid-column: span 3;
+        //grid-column: span 3;
       }
 
       @include adaptive-size(desktop) {
