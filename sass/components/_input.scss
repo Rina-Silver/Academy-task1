@@ -1,4 +1,11 @@
 .subscribe {
+  &__svg {
+    fill: inherit;
+
+    @include adaptive-size(tablet) {
+      display: none;
+    }
+  }
   &__form {
     display: inline-flex;
     text-align: center;
@@ -19,16 +26,21 @@
 
     border-top-left-radius: 25px;
     border-bottom-left-radius: 25px;
+
+    @include adaptive-size(desktop) {
+      width: 392px;
+    }
   }
 
   &__button {
     @extend %button;
     @extend %button-bordered;
+
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
 
     border: 2px solid $white-color;
-
+    fill: $accent-darker-color;
     color: $accent-darker-color;
     background-color: $white-color;
 
@@ -37,6 +49,20 @@
       border: 2px solid $light-text-color;
       color: $secondary-text-color;
       background-color: $light-text-color;
+    }
+
+    @include adaptive-size(tablet-break) {
+      padding: 14px 14px;
+      width: auto;
+    }
+
+    .btn-text {
+      color: inherit;
+
+      display: none;
+      @include adaptive-size(tablet) {
+        display: inline-flex;
+      }
     }
   }
 }

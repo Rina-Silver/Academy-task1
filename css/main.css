@@ -1323,6 +1323,16 @@ a {
   z-index: 4;
 }
 
+.subscribe__svg {
+  fill: inherit;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__svg {
+    display: none;
+  }
+}
+
 .subscribe__form {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1346,10 +1356,17 @@ a {
   border-bottom-left-radius: 25px;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe__input {
+    width: 392px;
+  }
+}
+
 .subscribe__button {
   border-top-left-radius: 0;
   border-bottom-left-radius: 0;
   border: 2px solid #ffffff;
+  fill: #0063dd;
   color: #0063dd;
   background-color: #ffffff;
 }
@@ -1358,6 +1375,26 @@ a {
   border: 2px solid #999999;
   color: #ffffff;
   background-color: #999999;
+}
+
+@media screen and (max-width: 767px) {
+  .subscribe__button {
+    padding: 14px 14px;
+    width: auto;
+  }
+}
+
+.subscribe__button .btn-text {
+  color: inherit;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .subscribe__button .btn-text {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+  }
 }
 
 .button--default {
