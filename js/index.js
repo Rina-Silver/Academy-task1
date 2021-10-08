@@ -4,7 +4,7 @@ import { openSection } from '../js/openSection.js';
 openModal();
 openSection();
 
-const swiperMobile = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   spaceBetween: 30,
   pagination: {
